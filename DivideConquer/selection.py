@@ -1,23 +1,26 @@
 # -*- coding:utf-8 -*-
 # Author:   liyanpeng
 # Email:    youran.xia@foxmail.com
-# Datetime: 2026-03-14 22:24
-# Filename: quick_sort.py
+# Datetime: 2026-03-16 22:01
+# Filename: selection.py
 from typing import List
 import random
 
 
 class Solution:
-    def quick_sort(self, arr: List[int], left: int, right: int) -> None:
+    def selection(self, arr: List[int], left: int, right: int, k: int) -> int:
         """
-        快速排序时间复杂度分析：
+        时间复杂度分析：
         运行次数函数T(n)= O(n) + ?
-        时间复杂度为O(nlogn)  数学期望
+        时间复杂度为O(n)  数学期望
         """
-        if left < right:
-            q = self.partition(arr, left, right)    # O(n)
-            self.quick_sort(arr, left, q - 1)
-            self.quick_sort(arr, q + 1, right)
+        q = self.partition(arr, left, right)    # O(n)
+        if k == (q - left + 1):
+            return arr[q]
+        elif k < (q - left + 1):
+            return self.selection(arr, left, q - 1, k)
+        else:
+            return self.selection(arr, q + 1, right, k - (q - left + 1))
 
     def partition(self, arr: List[int], left: int, right: int) -> int:
         # x = arr[right]  # 选取最后一个主元
@@ -38,7 +41,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    input_arr = [32, 15, 11, 26, 53, 87, 3, 61]
+    input_arr = [21, 17, 37, 28, 13, 14, 22, 52, 40, 24, 48, 4, 47, 8, 42, 18]
     solution = Solution()
-    solution.quick_sort(input_arr, left=0, right=len(input_arr) - 1)
-    print(input_arr)
+    output = solution.selection(input_arr, left=0, right=len(input_arr) - 1, k=8)
+    print(output)
