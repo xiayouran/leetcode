@@ -17,3 +17,6 @@
  - 0-1背包问题（0-1 KnapsackProblem）
  - 最大子数组问题（MaxSubArrayProblem）
  - 最长公共子序列问题（LongestCommonSubsequenceProblem，LCS）
+ - 最长公共子串问题（LongestCommonSubstringProblem，LCS）
+ - 最小编辑距离（MinimumEditDistance，MED）
+ - 钢条切割问题（RodCuttingProblem）
