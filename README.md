@@ -21,6 +21,9 @@
  - 最小编辑距离（Minimum Edit Distance，MED）
  - 钢条切割问题（Rod Cutting Problem）
  - 矩阵链乘法问题（Matrix-chain Multiplication Problem）
+ - 带权活动选择问题（Weighted Activity Selection Problem）
 
 ## 贪心算法篇（Greedy Algorithm）
  - 部分背包问题（Fractional Knapsack Problem）
+ - 最优前缀编码问题（Optimal Prefix Code Problem）（霍夫曼编码）
+ - 活动选择问题（Activity Selection Problem）
