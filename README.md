@@ -27,3 +27,11 @@
  - 部分背包问题（Fractional Knapsack Problem）
  - 最优前缀编码问题（Optimal Prefix Code Problem）（霍夫曼编码）
  - 活动选择问题（Activity Selection Problem）
+
+# 图算法篇（Graph）
+ - 广度优先搜索（Breadth First Search，BFS）
+ - 深度优先搜索（Depth First Search，DFS）
+ - 有向图中的环路检测（Judge Cycle）
+ - 拓扑排序（Topological Sort）
+ - 强连通分量（Strongly Connected Components，SCC）
+ - 最小生成树问题（Minimum Spanning Tree Problem，MST）
