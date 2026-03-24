@@ -4,6 +4,7 @@
 ## 基础篇（Base）
   - 插入排序（Insert Sort）
   - 选择排序（Select Sort）
+  - 冒泡排序（Bubble Sort）
 
 ## 分而治之篇（Divide Conquer）
  - 归并排序（Merge Sort）
